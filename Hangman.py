@@ -127,4 +127,10 @@ def play():
     else:
         print("Sorry, you ran out of tries. The word was:", word)
 
+    restart = input("Would you like to play again? (Y/N): ").upper()
+    if restart == "Y":
+        play()
+    else:
+        print("Thank you for playing! Goodbye.")
+
 play()
